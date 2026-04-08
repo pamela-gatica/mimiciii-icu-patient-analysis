@@ -8,7 +8,7 @@ This project presents an exploratory data analysis of ICU patient data using the
 - [Tools Used](#tools-used)
 - [Dataset](#dataset)
 - [Analysis Performed](#analysis-performed)
-6. [Running the project_flask Application](#running-the-project_flask-application)
+    1. [Patient Data Exploration](#patient-data-exploration)
 7. [Project/Code Structure](#projectcode-structure)
 8. [App Routes](#app-routes)
 9. [License](#license)
