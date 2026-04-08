@@ -149,7 +149,7 @@ FROM `physionet-data.mimiciii_clinical.patients`
 GROUP BY gender
 ORDER BY gender;
 ```
-![Mortality by Gender](images/06_mortality_by_gender.png)
+![Mortality by Gender](images/06A_mortality_by_gender.png)
 
 ```sql
 -- 6b. Mortality rate by age group
@@ -177,7 +177,7 @@ FROM age_classified
 GROUP BY age_group
 ORDER BY age_group;
 ```
-![Mortality by Age Group](images/07_mortality_by_age_group.png)
+![Mortality by Age Group](images/06B_mortality_by_age_group.png)
 
 ```sql
 -- 6c. Average ICU length of stay by age group (in days)
@@ -196,7 +196,7 @@ INNER JOIN `physionet-data.mimiciii_clinical.patients` pat
 GROUP BY age_group
 ORDER BY age_group;
 ```
-![Average ICU Length of Stay by Age](images/08_avg_los_by_age_group.png)
+![Average ICU Length of Stay by Age](images/06C_avg_los_by_age_group.png)
 
 
 ## Key Findings
