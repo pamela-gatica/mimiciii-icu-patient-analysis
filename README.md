@@ -59,24 +59,26 @@ Examined ICU stay records, patient age at admission, and pre-ICU time.
 - ICU stay characteristics and pre-ICU time may influence patient outcomes and severity
 
 ## Repository Structure
+```bash
 mimiciii-icu-patient-analysis/
 │
 ├── README.md
 ├── sql/
-│ ├── 01_patient_exploration.sql
-│ ├── 02_gender_distribution.sql
-│ ├── 03_mortality_analysis.sql
-│ ├── 04_age_group_analysis.sql
-│ ├── 05_icu_stay_details.sql
-│ └── 06_additional_analysis.sql
+│   ├── 01_patient_exploration.sql
+│   ├── 02_gender_distribution.sql
+│   ├── 03_mortality_analysis.sql
+│   ├── 04_age_group_analysis.sql
+│   ├── 05_icu_stay_details.sql
+│   └── 06_additional_analysis.sql
 │
 ├── images/
-│ ├── gender_distribution.png
-│ ├── mortality_chart.png
-│ └── age_group_chart.png
+│   ├── gender_distribution.png
+│   ├── mortality_chart.png
+│   └── age_group_chart.png
 │
 └── docs/
-└── project_report.pdf
+    └── project_report.pdf
+```
 
 ## Limitations
 - This analysis is exploratory and does not establish causality
