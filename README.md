@@ -48,7 +48,6 @@ FROM `physionet-data.mimiciii_clinical.patients`
 GROUP BY gender
 ORDER BY patient_count DESC;
 ```
-## Sample Visualization
 ![Gender Distribution](images/01_gender_distribution.png)
 
 ### 3. Mortality Analysis
@@ -63,8 +62,6 @@ FROM `physionet-data.mimiciii_clinical.patients`
 GROUP BY expire_flag
 ORDER BY expire_flag;
 ```
-
-## Sample Visualization
 ![Mortality Analysis](images/02_mortality_status.png)
 
 ### 4. Age Group Analysis
@@ -105,8 +102,6 @@ FROM age
 GROUP BY age_group, gender
 ORDER BY age_group, gender;
 ```
-
-## Sample Visualization
 ![Age Group Analysis](images/03_age_group_gender.png)
 
 ### 5. ICU Stay Details
@@ -152,8 +147,6 @@ FROM `physionet-data.mimiciii_clinical.patients`
 GROUP BY gender
 ORDER BY gender;
 ```
-
-## Sample Visualization
 ![Mortality by Age Group](images/04_mortality_by_age_group.png)
 
 ```sql
@@ -182,8 +175,6 @@ FROM age_classified
 GROUP BY age_group
 ORDER BY age_group;
 ```
-
-## Sample Visualization
 ![Mortality by Age Group](images/05_mortality_by_age_group.png)
 
 ```sql
@@ -203,7 +194,6 @@ INNER JOIN `physionet-data.mimiciii_clinical.patients` pat
 GROUP BY age_group
 ORDER BY age_group;
 ```
-## Sample Visualization
 ![Average ICU Length of Stay by Age](images/06_avg_los_by_age_group.png)
 
 
