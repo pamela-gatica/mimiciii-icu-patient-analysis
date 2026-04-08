@@ -1,5 +1,22 @@
 # Exploratory ICU Patient Analysis using MIMIC-III and BigQuery
 
+## Contents
+1. [Overview](#overview)
+2. [Objectives](#objectives)
+3. [Tools Used](#tools-used)
+4. [Dataset](#getting-started)
+5. [Installation and Configuration Instructions](#installation-and-configuration-instructions)
+6. [Running the project_flask Application](#running-the-project_flask-application)
+7. [Project/Code Structure](#projectcode-structure)
+8. [App Routes](#app-routes)
+9. [License](#license)
+10. [References](#references)
+9. [Contributing](#contributing)
+10. [Authors and Contributors](#authors-&-contributors)
+12. [License](#license)
+13. [References](#references)
+14. [Additional Information](#additional-information)
+
 ## Overview
 This project presents an exploratory data analysis of ICU patient data using the MIMIC-III clinical database in Google BigQuery, transforming an academic lab exercise into a portfolio-ready healthcare analytics project.
 
