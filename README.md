@@ -48,7 +48,8 @@ FROM `physionet-data.mimiciii_clinical.patients`
 GROUP BY gender
 ORDER BY patient_count DESC;
 ```
-
+## Sample Visualization
+![Gender Distribution](images/01_gender_distribution.png)
 
 ### 3. Mortality Analysis
 Evaluated the proportion of patients who survived vs. died during ICU stay.
