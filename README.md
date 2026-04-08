@@ -64,6 +64,9 @@ GROUP BY expire_flag
 ORDER BY expire_flag;
 ```
 
+## Sample Visualization
+![Mortality Analysis](images/02_mortality_status.png)
+
 ### 4. Age Group Analysis
 Grouped patients into age categories (neonate, middle, adult, >89) and analyzed distributions.
 
@@ -102,6 +105,9 @@ FROM age
 GROUP BY age_group, gender
 ORDER BY age_group, gender;
 ```
+
+## Sample Visualization
+![Age Group Analysis](images/03_age_group_gender.png)
 
 ### 5. ICU Stay Details
 Examined ICU stay records, patient age at admission, and pre-ICU time.
@@ -145,9 +151,12 @@ SELECT
 FROM `physionet-data.mimiciii_clinical.patients`
 GROUP BY gender
 ORDER BY gender;
+```
 
--- -----------------------------------------------------------------------
+## Sample Visualization
+![Mortality by Age Group](images/04_mortality_by_age_group.png)
 
+```sql
 -- 6b. Mortality rate by age group
 WITH age_classified AS (
     SELECT
@@ -172,9 +181,12 @@ SELECT
 FROM age_classified
 GROUP BY age_group
 ORDER BY age_group;
+```
 
--- -----------------------------------------------------------------------
+## Sample Visualization
+![Mortality by Age Group](images/05_mortality_by_age_group.png)
 
+```sql
 -- 6c. Average ICU length of stay by age group (in days)
 SELECT
     CASE
@@ -191,10 +203,8 @@ INNER JOIN `physionet-data.mimiciii_clinical.patients` pat
 GROUP BY age_group
 ORDER BY age_group;
 ```
-
 ## Sample Visualization
-![Gender Distribution](images/gender_distribution.png)
-
+![Average ICU Length of Stay by Age](images/06_avg_los_by_age_group.png)
 
 
 ## Key Findings
