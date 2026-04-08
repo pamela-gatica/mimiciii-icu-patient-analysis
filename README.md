@@ -8,7 +8,7 @@ This project presents an exploratory data analysis of ICU patient data using the
 - [Tools Used](#tools-used)
 - [Dataset](#dataset)
 - [Analysis Performed](#analysis-performed)
-    1. [Patient Data Exploration](#patient-data-exploration)
+    1. [Patient Data Exploration](#1.-patient-data-exploration)
 7. [Project/Code Structure](#projectcode-structure)
 8. [App Routes](#app-routes)
 9. [License](#license)
