@@ -51,6 +51,14 @@ Examined ICU stay records, patient age at admission, and pre-ICU time.
 ## Sample Visualization
 ![Gender Distribution](images/gender_distribution.png)
 
+## Example Query
+
+```sql
+SELECT gender, COUNT(*) AS patient_count
+FROM physionet-data.mimiciii_clinical.patients
+GROUP BY gender;
+```
+
 ## Key Findings
 - The ICU population shows a slight male predominance (~56%), suggesting higher ICU utilization among males
 - The mortality rate (~34%) indicates a high-risk critical care population
