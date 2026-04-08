@@ -20,6 +20,7 @@ This project presents an exploratory data analysis of ICU patient data using the
 
 ## Dataset
 The MIMIC-III database is a large, publicly available dataset containing de-identified health data from ICU patients.
+
 The analysis focuses on key tables including:
 - patients
 - admissions
