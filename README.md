@@ -35,6 +35,7 @@ Retrieved all patient records and key attributes such as gender, date of birth, 
 SELECT *
 FROM `physionet-data.mimiciii_clinical.patients`
 ```
+![Data Exploration](images/01_patient_data_sample.png)
 
 ### 2. Gender Distribution
 Analyzed the distribution of patients by gender.
@@ -48,7 +49,7 @@ FROM `physionet-data.mimiciii_clinical.patients`
 GROUP BY gender
 ORDER BY patient_count DESC;
 ```
-![Gender Distribution](images/01_gender_distribution.png)
+![Gender Distribution](images/02_gender_distribution.png)
 
 ### 3. Mortality Analysis
 Evaluated the proportion of patients who survived vs. died during ICU stay.
@@ -62,7 +63,7 @@ FROM `physionet-data.mimiciii_clinical.patients`
 GROUP BY expire_flag
 ORDER BY expire_flag;
 ```
-![Mortality Analysis](images/02_mortality_status.png)
+![Mortality Analysis](images/03_mortality_status.png)
 
 ### 4. Age Group Analysis
 Grouped patients into age categories (neonate, middle, adult, >89) and analyzed distributions.
@@ -102,7 +103,7 @@ FROM age
 GROUP BY age_group, gender
 ORDER BY age_group, gender;
 ```
-![Age Group Analysis](images/03_age_group_gender.png)
+![Age Group Analysis](images/04_age_group_gender.png)
 
 ### 5. ICU Stay Details
 Examined ICU stay records, patient age at admission, and pre-ICU time.
@@ -130,6 +131,7 @@ INNER JOIN `physionet-data.mimiciii_clinical.admissions` adm
     ON ie.hadm_id = adm.hadm_id
 ORDER BY subject_id, icustay_id;
 ```
+![ICU Stay Details](images/05_icu_stays_by_age_group.png)
 
 ### 6. Additional Analysis (Extended Work)
 - Mortality rate by gender
@@ -147,7 +149,7 @@ FROM `physionet-data.mimiciii_clinical.patients`
 GROUP BY gender
 ORDER BY gender;
 ```
-![Mortality by Age Group](images/04_mortality_by_age_group.png)
+![Mortality by Gender](images/06_mortality_by_gender.png)
 
 ```sql
 -- 6b. Mortality rate by age group
@@ -175,7 +177,7 @@ FROM age_classified
 GROUP BY age_group
 ORDER BY age_group;
 ```
-![Mortality by Age Group](images/05_mortality_by_age_group.png)
+![Mortality by Age Group](images/07_mortality_by_age_group.png)
 
 ```sql
 -- 6c. Average ICU length of stay by age group (in days)
@@ -194,7 +196,7 @@ INNER JOIN `physionet-data.mimiciii_clinical.patients` pat
 GROUP BY age_group
 ORDER BY age_group;
 ```
-![Average ICU Length of Stay by Age](images/06_avg_los_by_age_group.png)
+![Average ICU Length of Stay by Age](images/08_avg_los_by_age_group.png)
 
 
 ## Key Findings
