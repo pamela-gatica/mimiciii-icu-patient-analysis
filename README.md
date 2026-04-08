@@ -8,17 +8,11 @@ This project presents an exploratory data analysis of ICU patient data using the
 - [Tools Used](#tools-used)
 - [Dataset](#dataset)
 - [Analysis Performed](#analysis-performed)
-1. [Patient Data Exploration](##patient-data-exploration)
-2. [Gender Distribution](#gender-distributio)
-8. [App Routes](#app-routes)
-9. [License](#license)
-10. [References](#references)
-9. [Contributing](#contributing)
-10. [Authors and Contributors](#authors-&-contributors)
-12. [License](#license)
-13. [References](#references)
-14. [Additional Information](#additional-information)
-
+- [Key Findings](#key-findings)
+- [Repository Structure](#repository-structure)
+- [Limitations](#limitations)
+- [Future Improvements](#future-improvements)
+- [How to Reproduce](#how-to-reproduce)
 
 ## Objectives
 - Explore patient demographic data
