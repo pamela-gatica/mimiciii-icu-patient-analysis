@@ -34,6 +34,17 @@ Retrieved all patient records and key attributes such as gender, date of birth, 
 ### 2. Gender Distribution
 Analyzed the distribution of patients by gender.
 
+```sql
+SELECT 
+    gender,
+    COUNT(*) AS patient_count,
+    ROUND(100 * COUNT(*) / SUM(COUNT(*)) OVER (), 2) AS percentage
+FROM `physionet-data.mimiciii_clinical.patients`
+GROUP BY gender
+ORDER BY patient_count DESC;
+```
+
+
 ### 3. Mortality Analysis
 Evaluated the proportion of patients who survived vs. died during ICU stay.
 
