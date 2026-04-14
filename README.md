@@ -1,12 +1,20 @@
 # Exploratory ICU Patient Analysis using MIMIC-III and BigQuery
 
 ## Overview
-This project presents an exploratory data analysis of ICU patient data using the MIMIC-III clinical database in Google BigQuery, transforming an academic lab exercise into a portfolio-ready healthcare analytics project.
+This project presents an exploratory data analysis of ICU patient data using the MIMIC-III clinical database in Google BigQuery, transforming an academic lab exercise into a professional, portfolio-ready healthcare analytics project.
+
+## Skills Demonstrated
+
+- SQL (joins, aggregations, window functions)
+- Data analysis and interpretation
+- Healthcare data exploration
+- Data storytelling
+- BigQuery
 
 ## Business Context
 Healthcare providers need to understand ICU patient patterns to improve outcomes, optimize resource allocation, and identify high-risk populations.
 
-This project analyzes ICU patient data from the MIMIC-III database to uncover key trends in mortality, demographics, and ICU stay characteristics.
+This project analyzes ICU patient data from the MIMIC-III database to uncover key trends in mortality, patient demographics, and ICU stay characteristics.
 
 ## Contents
 - [Objectives](#objectives)
@@ -15,8 +23,8 @@ This project analyzes ICU patient data from the MIMIC-III database to uncover ke
 - [Analysis Performed](#analysis-performed)
 - [Key Findings](#key-findings)
 - [Key Insights](#key-insights)
-- [Potential Actions](potential-actions)
-- [Business Impact](business-impact)
+- [Potential Actions](#potential-actions)
+- [Business Impact](#business-impact)
 - [Repository Structure](#repository-structure)
 - [Limitations](#limitations)
 - [Future Improvements](#future-improvements)
@@ -40,7 +48,7 @@ This project analyzes ICU patient data from the MIMIC-III database to uncover ke
 ## Dataset
 The MIMIC-III database is a large, publicly available dataset containing de-identified health data from ICU patients.
 
-The analysis focuses on key tables including:
+The analysis focuses on key tables, including:
 - patients
 - admissions
 - icustays
@@ -219,7 +227,7 @@ ORDER BY age_group;
 
 
 ## Key Findings
-- The ICU population shows a slight male predominance (~56%), suggesting higher ICU utilization among males
+- - The ICU population shows a slight male predominance (~56%), suggesting higher ICU utilization among male patients
 - The mortality rate (~34%) indicates a high-risk critical care population
 - Adult patients represent the largest proportion of ICU admissions
 - Elderly patients (>89) show distinct patterns in gender distribution
@@ -238,11 +246,12 @@ ORDER BY age_group;
 - Investigate demographic disparities to improve targeted care strategies
 
 ## Business Impact
-These insights can help:
-- Improve patient risk stratification
-- Support clinical decision-making
-- Optimize ICU resource allocation
-- Identify high-risk demographic groups
+These insights can support:
+
+- Improved patient risk stratification
+- More informed clinical decision-making
+- Better ICU resource allocation
+- Identification of high-risk demographic groups
 
 ## Repository Structure
 ```bash
