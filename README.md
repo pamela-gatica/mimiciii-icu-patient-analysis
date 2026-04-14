@@ -3,12 +3,20 @@
 ## Overview
 This project presents an exploratory data analysis of ICU patient data using the MIMIC-III clinical database in Google BigQuery, transforming an academic lab exercise into a portfolio-ready healthcare analytics project.
 
+## Business Context
+Healthcare providers need to understand ICU patient patterns to improve outcomes, optimize resource allocation, and identify high-risk populations.
+
+This project analyzes ICU patient data from the MIMIC-III database to uncover key trends in mortality, demographics, and ICU stay characteristics.
+
 ## Contents
 - [Objectives](#objectives)
 - [Tools Used](#tools-used)
 - [Dataset](#dataset)
 - [Analysis Performed](#analysis-performed)
 - [Key Findings](#key-findings)
+- [Key Insights](#key-insights)
+- [Potential Actions](potential-actions)
+- [Business Impact](business-impact)
 - [Repository Structure](#repository-structure)
 - [Limitations](#limitations)
 - [Future Improvements](#future-improvements)
@@ -216,6 +224,25 @@ ORDER BY age_group;
 - Adult patients represent the largest proportion of ICU admissions
 - Elderly patients (>89) show distinct patterns in gender distribution
 - ICU stay characteristics and pre-ICU time may influence patient outcomes and severity
+
+## Key Insights
+- The high ICU mortality rate (~34%) indicates a critically ill patient population, suggesting the need for early risk identification and improved intervention strategies to enhance patient outcomes.
+- The predominance of male patients (~56%) may reflect underlying differences in disease prevalence, healthcare access, or risk exposure, highlighting an opportunity for further demographic and clinical investigation.
+- Adult patients represent the largest proportion of ICU admissions, indicating that ICU resources and care strategies should primarily target adult populations while still addressing the needs of vulnerable groups.
+- Elderly patients (>89) exhibit distinct patterns in ICU utilization, which may suggest increased vulnerability, higher severity cases, or different care pathways compared to other age groups.
+- Variations in ICU stay characteristics and pre-ICU time may indicate differences in patient severity or delays in admission, potentially impacting patient outcomes and requiring further operational analysis.
+
+## Potential Actions
+- Implement early risk scoring models to identify high-risk ICU patients
+- Analyze admission delays to optimize ICU intake processes
+- Investigate demographic disparities to improve targeted care strategies
+
+## Business Impact
+These insights can help:
+- Improve patient risk stratification
+- Support clinical decision-making
+- Optimize ICU resource allocation
+- Identify high-risk demographic groups
 
 ## Repository Structure
 ```bash
