@@ -19,6 +19,7 @@ This project analyzes ICU patient data from the MIMIC-III database to uncover ke
 ## Contents
 - [Objectives](#objectives)
 - [Tools Used](#tools-used)
+- [Data Visualization](#data-visualization)
 - [Dataset](#dataset)
 - [Analysis Performed](#analysis-performed)
 - [Key Findings](#key-findings)
@@ -43,7 +44,12 @@ This project analyzes ICU patient data from the MIMIC-III database to uncover ke
 - SQL
 - MIMIC-III Dataset
 - Microsoft Word / PDF
-- (Optional) Python / Power BI for visualization
+- Python / Power BI for visualization
+
+## Data Visualization
+All visualizations were generated using Python (Matplotlib) after querying data directly from Google BigQuery.
+
+The workflow integrates SQL-based data extraction with Python-based visualization to produce reproducible and scalable analysis.
 
 ## Dataset
 The MIMIC-III database is a large, publicly available dataset containing de-identified health data from ICU patients.
@@ -52,6 +58,7 @@ The analysis focuses on key tables, including:
 - patients
 - admissions
 - icustays
+
 
 ## Analysis Performed
 
